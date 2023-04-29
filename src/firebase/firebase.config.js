@@ -7,8 +7,12 @@ import { initializeApp } from "firebase/app";
 
 console.log("environment variable", import.meta.env.VITE_apiKey);
 const firebaseConfig = {
-  apiKey: "AIzaSyDvH_6Kgk2unNR2x-I8gFO2__cGf5A8n-Q",
- 
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
