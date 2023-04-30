@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         path: ":id",
         element: <Catagory />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/catagories/${params.id}`),
+          fetch(`https://the-news-dragon-server-tusarallen.vercel.app/catagories/${params.id}`),
       },
     ],
   },
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/news/${params.id}`),
+          fetch(`https://the-news-dragon-server-tusarallen.vercel.app/news/${params.id}`),
       },
     ],
   },
